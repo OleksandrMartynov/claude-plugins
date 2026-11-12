@@ -1,0 +1,16 @@
+{
+  "name": "martynov-plugins",
+  "owner": {
+    "name": "OleksandrMartynov"
+  },
+  "metadata": {
+    "description": "Claude Code plugins by OleksandrMartynov"
+  },
+  "plugins": [
+    {
+      "name": "commit-helper",
+      "source": "./plugins/commit-helper",
+      "description": "Writes clear Conventional Commits messages from your staged git changes."
+    }
+  ]
+}
