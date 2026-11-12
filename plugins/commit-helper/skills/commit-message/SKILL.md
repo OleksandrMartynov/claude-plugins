@@ -12,6 +12,8 @@ Generate a concise, accurate commit message for the user's staged changes.
 1. Run `git diff --staged --stat` and `git diff --staged` to see what is staged.
    - If nothing is staged, tell the user and offer to look at `git diff` (unstaged) instead. Do not stage files yourself.
 2. Run `git log -5 --oneline` to match the repository's existing style and scopes.
+   - Also check for project conventions in `CLAUDE.md` or `CONTRIBUTING.md` (message language, allowed scopes, ticket-ID prefixes) and follow them. If recent commits are written in a language other than English, write the message in that language.
+   - If the current branch name contains a ticket ID (e.g. `feature/ABC-123-login`) and recent commits reference ticket IDs, add it to the footer as `Refs: ABC-123`.
 3. Decide the commit type: `feat`, `fix`, `docs`, `style`, `refactor`, `perf`, `test`, `build`, `ci`, or `chore`.
 4. Write the message in this format:
 
