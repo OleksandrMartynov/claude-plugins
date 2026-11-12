@@ -11,9 +11,16 @@ A Claude Code plugin marketplace.
 
 ## Update
 
+Manually:
+
 ```
 /plugin marketplace update martynov-plugins
 ```
+
+Then run `/reload-plugins` (or restart Claude Code) to apply the new version.
+
+Automatically: in Claude Code run `/plugin`, open the **Marketplaces** tab, select
+`martynov-plugins` and choose **Enable auto-update**. Third-party marketplaces have it off by default.
 
 ## Plugins
 

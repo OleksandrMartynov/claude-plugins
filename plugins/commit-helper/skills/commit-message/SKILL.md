@@ -29,6 +29,8 @@ Generate a concise, accurate commit message for the user's staged changes.
 - Explain the *why* in the body when it is not obvious from the diff; skip the body for trivial changes.
 - Mark breaking changes with `!` after the type/scope and a `BREAKING CHANGE:` footer.
 - Describe only what is actually in the diff — never invent changes.
+- Avoid vague summaries such as "update code", "fix stuff" or "misc changes": name the concrete behavior or component that changed.
+- Mention in the body when the diff includes added or changed tests, or when it changes behavior without any test changes.
 - If the diff mixes unrelated changes, say so and suggest splitting into separate commits.
 
 ## Output
